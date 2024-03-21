@@ -1,0 +1,93 @@
+# --- Reserved Keywords
+highlight("def", "reserved")
+highlight("end", "reserved")
+highlight("class", "reserved")
+highlight("module", "reserved")
+highlight("begin", "reserved")
+highlight("rescue", "reserved")
+highlight("ensure", "reserved")
+highlight("if", "reserved")
+highlight("unless", "reserved")
+highlight("then", "reserved")
+highlight("elsif", "reserved")
+highlight("else", "reserved")
+highlight("case", "reserved")
+highlight("when", "reserved")
+highlight("while", "reserved")
+highlight("until", "reserved")
+highlight("for", "reserved")
+highlight("break", "reserved")
+highlight("next", "reserved")
+highlight("redo", "reserved")
+highlight("retry", "reserved")
+highlight("in", "reserved")
+highlight("do", "reserved")
+highlight("return", "reserved")
+highlight("yield", "reserved")
+highlight("alias", "reserved")
+highlight("and", "reserved")
+highlight("defined?", "reserved")
+highlight("redo", "reserved")
+highlight("super", "reserved")
+highlight("undef", "reserved")
+
+# --- Variables
+highlight("self", "variable")
+highlight("nil", "variable")
+
+# --- Binary Keywords
+highlight("nil", "binary")
+highlight("true", "binary")
+highlight("false", "binary")
+highlight("{", "binary")
+highlight("}", "binary")
+highlight("[", "binary")
+highlight("]", "binary")
+
+# --- Assignment Operators
+highlight("=", "operator")
+highlight("+=", "operator")
+highlight("-=", "operator")
+highlight("*=", "operator")
+highlight("/=", "operator")
+highlight("%=", "operator")
+
+--- Comparison Operators
+highlight("==", "operator")
+highlight("===", "operator")
+highlight("!=", "operator")
+highlight("<", "operator")
+highlight(">", "operator")
+highlight("<=", "operator")
+highlight(">=", "operator")
+
+--- Logical Operators
+highlight("and", "operator")
+highlight("or", "operator")
+highlight("not", "operator")
+
+--- Bitwise Operators
+highlight("&", "operator")
+highlight("|", "operator")
+highlight("^", "operator")
+highlight("~", "operator")
+highlight("<<", "operator")
+highlight(">>", "operator")
+
+--- Other Operators
+highlight("+", "operator")
+highlight("-", "operator")
+highlight("/", "operator")
+highlight("*", "operator")
+highlight("%", "operator")
+
+--- Strings:
+highlight_region("\"", "\"", "string")
+highlight_region("'", "'", "string")
+highlight_region('"', '"', "string")
+highlight_region("%q{", "}", "string")
+highlight_region("%Q{", "}", "string")
+
+--- Comments:
+highlight_region("=begin", "=end", "comments")
+highlight_region("#", "", "comments", true)
